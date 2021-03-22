@@ -1,3 +1,73 @@
+/*
+Palíndrome
+
+DATA DE ENTREGA: 30/09/2016 (Entregas após esta data serão penalizadas)
+Nome do arquivo fonte na linguagem C ANSI.
+Você deve anexar o arquivo código-fonte ao invés de um arquivo compactado. Exemplo: palim.c
+
+Descrição
+
+Uma cadeia de caracteres é chamada de palíndrome se seqüência de caracteres da esquerda para a direita é igual à seqüência de caracteres da direita para a esquerda (uma outra definição é que o primeiro caractere da cadeia deve ser igual ao último caractere, o segundo caractere seja igual ao penúltimo caractere, o terceiro caractere seja igual ao antepenúltimo caractere, e assim por diante). Por exemplo, as cadeias de caracteres ‘mim’, ‘axxa’ e ‘ananaganana’ são exemplos de palíndromes.
+
+Palavras podem ser combinadas para formar uma palavra palíndrome. Por exemplo, as palavras ‘aki’ e ‘ika’, quando analisadas sozinhas, não são palíndromes, porém a combinação das duas (‘akiika’) resulta em uma palavra palíndrome.
+
+Tarefa
+
+Dada sempre três palavras, escreva um programa que determine elas ou alguma combinação delas formam uma palavra palíndrome. Deve-se realizar a combinação das palavras mantendo a ordem de entrada das mesmas, ou seja, as combinações que devem ser avaliadas são as seguintes: 
+
+s1
+s2
+s3
+s1s2
+s1s3
+s2s3
+s1s2s3
+
+Entrada
+
+A entrada é constituída de um conjunto de três palavras, s1, s2 e s3. O programa deve sempre ler três palavras, e só deve parar de ler a entrada quando s1=*. Obs: Ao ler a última entrada, o seu programa DEVERÁ fazer uma leitura normal de três palavras, ou seja, leitura de s1, s2 e s3, porém seu programa irá avaliar somente s1=* para finalizar, logo, os valores de s2 e s3 na última leitura não serão importantes.
+
+Saída
+
+Para cada conjunto da entrada seu programa deve produzir três linhas na saída. A primeira linha deve conter um identificador do conjunto de teste, no formato “Teste n”, onde n é numerado a partir de 1. A segunda linha deve conter, caso haja, todas as palavras e seus conjuntos (uniões) que formam uma palavra palíndrome separadas por um espaço em branco. A terceira linha deve ser deixada em branco. O formato mostrado no exemplo de saída abaixo deve ser seguido rigorosamente.
+
+Exemplo
+
+Entrada
+
+ipd lll dpi
+ara rrr ara
+rvh vek hvr
+lxr brf byc
+dcn lll gkc
+* qwee wqeq
+
+Saída
+
+Teste 1
+lll ipddpi ipdllldpi
+
+Teste 2
+ara rrr ara araara ararrrara
+
+Teste 3
+rvhhvr
+
+Teste 4
+
+
+Teste 5
+lll
+
+(esta saída corresponde ao exemplo de entrada acima)
+
+Restrições
+
+    0 <= s1 <= 100 (s1 = * apenas para indicar o fim da entrada)
+    0 <= s2 <= 100
+    0 <= s3 <= 100
+
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
